@@ -1,0 +1,1 @@
+{"name":"Local: Arrays_Basic","url":"/home/sourav/CPP/CP1/Arrays_Basic.cpp","tests":[{"id":1702482165546,"input":"5\n999999999 999999999 999999999 999999999 999999999","output":"3999999996"},{"id":1702615620770,"input":"3\n1 2 3","output":"6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sourav/CPP/CP1/Arrays_Basic.cpp","group":"local","local":true}
