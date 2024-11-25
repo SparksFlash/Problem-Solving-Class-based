@@ -31,4 +31,5 @@ int main()
         sum = prefix_sum[r] - prefix_sum[l - 1];
         cout << sum << '\n';
     }
+    return 0;
 }
