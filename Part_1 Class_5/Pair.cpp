@@ -2,7 +2,10 @@
 using namespace std;
 int main()
 {
-    pair<int, double> p, q;
+    // Initialization using make_pair
+    pair<int, double> p2 = make_pair(77, 99);
+
+    pair<int, double> p, q; // Declaration
     p = make_pair(5, 3.5);
     q = make_pair(6, 7);
     // swap(p, q);
@@ -27,4 +30,11 @@ int main()
     pai_r = make_pair(45, 69);
     auto [x, y] = pai_r;
     cout << x << ' ' << y << '\n';
+
+    // Using tie to access the elements of a pair
+    pair<int, int> p3;
+    p3 = make_pair(25, 95);
+    int a, b;
+    tie(a, b) = p3;
+    cout << a << ' ' << b << '\n';
 }
