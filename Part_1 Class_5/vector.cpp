@@ -7,15 +7,16 @@ int main()
     // cout << (*it) << '\n'; // Output: 1
 
     vector<int> v;
-    v.push_back(10);
-    v.push_back(30);
-    v.push_back(30);
-    v.push_back(40);
+    v.push_back(0);
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
 
-    v.resize(2);
+    // v.resize(2);
 
-    v.assign(6, 5);
-    // vector<int> v(6,5);
+    // v.assign(6, 5);
+    //  vector<int> v(6,5);
 
     // v.clear();
 
@@ -32,4 +33,10 @@ int main()
         cout << "\nYES" << '\n';
     else
         cout << "\nNO" << '\n';
+
+    // Iterator
+    vector<int>::iterator it;
+
+    it = v.begin();
+    cout << (*it) << '\n';
 }
