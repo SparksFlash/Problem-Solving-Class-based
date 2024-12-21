@@ -37,6 +37,23 @@ int main()
     // Iterator
     vector<int>::iterator it;
 
-    it = v.begin();
-    cout << (*it) << '\n';
+    // it = v.begin();
+    // cout << (*it) << '\n';
+
+    // cout << (*(--v.end()));
+
+    for (auto it = v.begin(); it != v.end(); it++)
+    {
+        cout << (*it) << '\n';
+    }
+
+    // we can also write together
+    // for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+    // {
+    //     cout << (*it) << '\n';
+    // }
+
+    vector<int>::reverse_iterator rit;
+    for (auto it = v.rbegin(); it != v.rend(); it++)
+        cout << (*it) << '\n';
 }
