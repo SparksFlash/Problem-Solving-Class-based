@@ -24,10 +24,10 @@ int main()
     // v.pop_back();
     // v.pop_back();
     // v.pop_back(); //error empty before pop
-    for (int i = 0; i < v.size(); i++)
-    {
-        cout << v[i] << ' ';
-    }
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //     cout << v[i] << ' ';
+    // }
 
     if (v.empty())
         cout << "\nYES" << '\n';
@@ -35,17 +35,17 @@ int main()
         cout << "\nNO" << '\n';
 
     // Iterator
-    vector<int>::iterator it;
+    vector<int>::iterator it = v.begin();
 
     // it = v.begin();
     // cout << (*it) << '\n';
 
     // cout << (*(--v.end()));
 
-    for (auto it = v.begin(); it != v.end(); it++)
-    {
-        cout << (*it) << '\n';
-    }
+    // for (auto it = v.begin(); it != v.end(); it++)
+    // {
+    //     cout << (*it) << '\n';
+    // }
 
     // we can also write together
     // for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
@@ -53,7 +53,11 @@ int main()
     //     cout << (*it) << '\n';
     // }
 
-    vector<int>::reverse_iterator rit;
-    for (auto it = v.rbegin(); it != v.rend(); it++)
-        cout << (*it) << '\n';
+    // reverse
+    //  vector<int>::reverse_iterator rit;
+    //  for (auto it = v.rbegin(); it != v.rend(); it++)
+    //      cout << (*it) << '\n';
+
+    it = next(next(it));
+    cout << *it << '\n';
 }
