@@ -60,4 +60,11 @@ int main()
 
     it = next(next(it));
     cout << *it << '\n';
+
+    vector<int> v1 = {1, 2, 3, 4, 5};
+    for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++)
+    {
+        cout << (*it) << ' ';
+    }
+    cout << '\n';
 }
