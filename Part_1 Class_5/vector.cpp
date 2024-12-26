@@ -62,9 +62,11 @@ int main()
     cout << *it << '\n';
 
     vector<int> v1 = {1, 2, 3, 4, 5};
-    for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++)
-    {
-        cout << (*it) << ' ';
-    }
-    cout << '\n';
+    for (int x : v1)
+        cout << x << ' ';
+    // for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++)
+    // {
+    //     cout << (*it) << ' ';
+    // }
+    // cout << '\n';
 }
