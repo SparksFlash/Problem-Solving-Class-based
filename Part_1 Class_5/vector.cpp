@@ -83,4 +83,15 @@ int main()
 
     for (auto p : v3)
         cout << p.first << ' ' << p.second << '\n';
+
+    // for (auto [x, y] : v3)
+    //     cout << x << ' ' << y << '\n';
+
+    vector<int> v2 = {10, 20, 30, 40, 50};
+    // reverse all elements of the vector
+    reverse(v2.begin(), v2.end()); // reverse the range [v.begin(), v.end()) => {50, 40, 30, 20, 10}
+
+    sort(v2.begin() + 1, v2.end() - 1); // sort the range [v.begin() + 1, v.end() - 1) => {50, 20, 30, 40, 10}
+
+    // so it basically excludes the right end of the range
 }
