@@ -69,4 +69,18 @@ int main()
     //     cout << (*it) << ' ';
     // }
     // cout << '\n';
+
+    cout << '\n';
+    vector<pair<int, int>> v3;
+    v3.push_back(make_pair(1, 2));
+    v3.push_back(make_pair(3, 4));
+    v3.push_back(make_pair(5, 6));
+    v3.push_back(make_pair(7, 8));
+    // for (auto it = v3.begin(); it != v3.end(); it++)
+    // {
+    //     cout << (*it).first << ' ' << (*it).second << '\n';
+    // }
+
+    for (auto p : v3)
+        cout << p.first << ' ' << p.second << '\n';
 }
