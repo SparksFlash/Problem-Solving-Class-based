@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin >> n;
+    int n, x, y;
+    cin >> n >> x >> y;
+
     set<int> s;
 }
