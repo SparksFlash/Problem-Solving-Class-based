@@ -95,4 +95,5 @@ int main()
     { // C++17 or above
         cout << "{" << key << ", " << value << "}\n";
     }
+    return 0;
 }
