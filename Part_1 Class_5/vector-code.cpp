@@ -37,5 +37,4 @@ int32_t main()
         cout << v[i] << ' ';
     }
     cout << '\n';
-    return 0;
 }
